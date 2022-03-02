@@ -1,0 +1,8 @@
+phpinfo()
+PHP Version => 8.0.11
+
+System => Windows NT RULEBLADE 10.0 build 22000 (Windows 10) AMD64
+Build Date => Sep 21 2021 18:23:03
+Build System => Microsoft Windows Server 2019 Datacenter [10.0.17763]
+Compiler => Visual C++ 2019
+Architecture => x64

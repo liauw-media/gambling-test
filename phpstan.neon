@@ -1,0 +1,23 @@
+includes:
+    - vendor/nunomaduro/larastan/extension.neon
+    - vendor/phpstan/phpstan-deprecation-rules/rules.neon
+    - phpstan-baseline.neon
+
+parameters:
+    level: 8
+    checkMissingIterableValueType: true
+    # The following check is beta and will produce false positives
+    # but it's nevertheless helpful for manual checking.
+    # See: https://github.com/nunomaduro/larastan/blob/master/docs/custom-config-paramaters.md#checkmodelproperties
+    checkModelProperties: false
+    paths:
+        - app
+        - bootstrap
+        - config
+        - database
+        - routes
+    excludePaths:
+        - 'database/migrations'
+        - 'app/*/Tests/*'
+    ignoreErrors:
+    checkGenericClassInNonGenericObjectType: false
